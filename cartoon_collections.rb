@@ -13,8 +13,10 @@ end
 def long_planeteer_calls(long_planeteer_calls)
   assorted_words = []
   short_words = []
-  long_planeteer_calls.all? do |calls|
+  if long_planeteer_calls.all? do |calls|
   calls.length < 4
+else
+  return false
 end
 
 end
